@@ -1,0 +1,66 @@
+<?php
+require 'header.html';
+?>
+<body>
+<section class="container" >
+<div class="container__pendidikan">
+
+  <div class="pendidikan" style="text-align:center">
+    <h3><img src="./assets/img/kuliah.svg" width="100px" height="100px"></img><br> Kuliah</h3><br>
+	<p style="color:black">2018 - Sekarang</p>
+    <p>Universitas Malikussaleh</p>
+  </div>
+
+  <div class="pendidikan" style="text-align:center">
+    <h3><img src="./assets/img/smk.svg" width="100px" height="100px"></img><br> SMK</h3><br>
+	<p style="color:black">2015 - 2018</p>
+    <p>SMKN 1 Lhosukon</p>
+  </div>
+
+
+  <div class="pendidikan" style="text-align:center">
+    <h3><img src="./assets/img/smp.svg" width="100px" height="100px"></img><br> SMP</h3><br>
+	<p style="color:black">2012 - 2015</p>
+    <p>SMPN 1 Lhoksukon</p>
+  </div>
+  
+  <div class="pendidikan" style="text-align:center">
+    <h3><img src="./assets/img/sd.svg" width="100px" height="100px"></img><br> SD</h3><br>
+	<p style="color:black">2006 - 2012</p>
+    <p>SDN 25 Lhoksukon</p>
+  </div>
+
+</div>
+
+<svg viewbox="0 0 10 100">
+  <line x1="5" x2="5" y1="0" y2="100"/>
+</svg>
+
+  <div class="container__kontak" style="display:flex">
+  <div class="pendidikan" style="text-align:center" onclick="hp()">
+    <p><img src="./assets/img/telepon.svg" width="50px"></img><br>   +622293361685</p>
+	</div>
+	<br>
+	<div class="pendidikan"  style="text-align:center" onclick="fb()">
+	<p><img src="./assets/img/fb.svg" width="50px"></img><br>  Facebook</p>
+	</div>
+	<br>
+	<div class="pendidikan"  style="text-align:center" onclick="wa()">
+	<p><img src="./assets/img/wa.svg" width="50px"></img><br>   Whatsapp</p>
+	</div>
+	<br>
+  </div> 
+  <br>
+  <div class="kembali" style="background:blue; border-radius:4px; color:white; padding:5px;"><a href="./">Kembali</a></div>
+ <br> 
+</section>
+<script>
+function wa() {
+	window.location="https://wa.me/6282293361685?text=ini%20text%20pesan";
+};
+function fb(){
+window.location="https://www.facebook.com/saifulriza.official";
+}
+</script>
+</body>
+</html>

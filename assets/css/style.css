@@ -1,0 +1,246 @@
+
+.tooltip,
+.container__pendidikan:before,
+.container__profil:before,
+.container__kontak:before {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  color: #fff;
+  background: #ffb238;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2.5px;
+}
+.container__pendidikan div,
+.container__kontak div,
+.container__profil div {
+  line-height: 2;
+  background: #fff;
+  padding: 1.2rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px #e6e6e6;
+}
+.container__pendidikan div:hover,
+.container__kontak div:hover,
+.container__profil div:hover {
+border : 2px solid blue;
+box-shadow : 0px 2px 20px rgb(103, 112, 235);
+cursor : pointer;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Mukta', sans-serif;
+  color: #5f39dd;
+  background: #c7c6ca;
+}
+.container {
+  margin: 5vh 2.5vw;
+  padding: 15vh 0;
+  background : #dedcd5;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: #fff; */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container svg {
+  height: 5rem;
+}
+.container svg line {
+  stroke: #14e75b;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-dasharray: 3px 20px;
+  animation: animateline 5s linear both infinite;
+}
+h3 {
+  font-size: 1.1rem;
+  color: #411fb2;
+}
+p {
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+a {
+  overflow: auto;
+  color : white;
+}
+#hijau {
+  background: green;
+  padding : 10px;
+  border-radius: 5%;
+}
+#biru {
+  background : blue;
+  padding : 10px;
+  border-radius: 5%;
+}
+#orange {
+  background : #a85832;
+  padding : 10px;
+  border-radius: 5%;
+}
+#hijau:hover {
+  background : #3471eb;
+  opacity : 0.8;
+}
+#biru:hover {
+  background : #3471eb;
+  opacity : 0.8;
+}
+#orange:hover {
+  background : #3471eb;
+  opacity : 0.8;
+}
+.container__pendidikan {
+  display: flex;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  position: relative;
+  box-shadow: 0px 0px 50px blue;
+}
+.container__pendidikan:hover {
+  background: #f3f1f1;
+}
+.container__pendidikan:before {
+  content: 'Riwayat Pendidikan';
+}
+.container__pendidikan div,
+.container__kontak div {
+  text-align: left;
+  margin: 0 1rem;
+}
+.container__profil {
+  padding: 7vh 7vw;
+  margin : 1px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  position: relative;
+  box-shadow: 0px 0px 50px blue;
+}
+.container__profil:hover {
+  background: #f3f1f1;
+}
+.container__profil:before {
+  content: 'Saiful Riza';
+}
+.container__profil div {
+  margin: 2rem 0;
+}
+.container__profil div svg {
+  width: 4rem;
+  height: auto;
+  fill: #5f39dd;
+}
+.container__profil li {
+  list-style-type :none;
+  float : left;
+  margin : 2px;
+}
+.container__kontak {
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  position: relative;
+  box-shadow: 0px 0px 50px blue;
+}
+}
+.container__kontak:hover {
+  background: #f3f1f1;
+  cursor : pointer;
+  border: 2px solid blue;
+}
+.container__kontak:before {
+  content: 'Kontak';
+}
+@media (max-width: 600px) {
+  .container__pendidikan, .container__kontak {
+    flex-direction: column;
+  }
+  .container__pendidikan div {
+    margin: 1rem 0;
+  }
+  .container {
+    width: auto;
+    height: 400px;
+    background : none;
+    display: block;
+    margin: auto;
+    /* padding: 5vh 5vw; */
+  }
+  .container__profil {
+    margin: 1px 1px 20px;
+    padding :auto;
+}
+.container__profil li {
+  float : none;
+}
+ul li {
+	padding:4px;
+}
+}
+@keyframes animateline {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -5rem;
+  }
+}
+img {
+  border-radius : 50%;
+  box-shadow: 0px 2px 5px blue;
+}
+img:hover{
+  box-shadow: 0px 2px 10px blue;
+}
+ul li {
+	padding : 10px;
+}
+.profile {
+	margin :4px;
+}
+p .kata {
+	color:orange;
+}
+pre {
+  white-space: pre-wrap;
+  background-color: #EEEEEE;
+  padding: 16px;
+}
+
+pre code {
+  word-break: break-word;
+}
+
+.is-invisible {
+  opacity: 0;
+}
+
+.subscription-details {
+  transition: opacity 1s;
+}
+.kembali:hover{
+	  box-shadow: 0px 2px 10px green;
+	  cursor : pointer;
+}
+.kembali {
+	  box-shadow: 0px 2px 6px green;
+}
+.kembali a {
+	text-decoration : none;
+}
