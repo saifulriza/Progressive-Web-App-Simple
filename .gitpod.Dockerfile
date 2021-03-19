@@ -1,5 +1,4 @@
 FROM gitpod/workspace-mysql
-FROM gitpod/workspace-full:latest
 
 USER root
 
@@ -7,6 +6,9 @@ USER root
 RUN install-packages mysql-server \
  && mkdir -p /var/run/mysqld /var/log/mysql \
  && chown -R gitpod:gitpod /etc/mysql /var/run/mysqld /var/log/mysql /var/lib/mysql /var/lib/mysql-files /var/lib/mysql-keyring /var/lib/mysql-upgrade
+
+# cek direktori
+RUN ls -a
 
 # Install our own MySQL config
 COPY mysql.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
