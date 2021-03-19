@@ -1,6 +1,12 @@
 image:
   file: .gitpod.Dockerfile
-  
+
+ports:
+  - port: 3306
+    onOpen: ignore
+  - port: 8000
+    onOpen: open-preview
+
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-    - init: gp await-port 3306 && ./mysql-bashrc-launch.sh
+    - init: gp await-port 3306
